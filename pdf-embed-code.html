@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Viewer</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .pdf-container {
+            width: 100%;
+            height: 90vh;
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+        embed {
+            width: 100%;
+            height: 100%;
+            border: 1px solid #ddd;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PDF Document</h1>
+        <div class="pdf-container">
+            <!-- Replace 'username', 'repository', and 'path/to/your/file.pdf' with your actual GitHub details -->
+            <embed 
+                src="https://github.com/username/repository/raw/main/path/to/your/file.pdf" 
+                type="application/pdf" 
+                width="100%" 
+                height="100%"
+            />
+        </div>
+    </div>
+</body>
+</html>
